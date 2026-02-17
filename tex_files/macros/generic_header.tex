@@ -2,13 +2,18 @@
 
 % Packages
 %
+\usepackage{silence}
+\WarningFilter{latex}{Command `\theHpclinenumber'}
+\WarningFilter{latex}{Command `\theH@pclinenumber'}
+\WarningFilter{latex}{Command `\theHpcgamecounter'}
+\WarningFilter{latex}{Command `\theHpcrlinenumber'}
 \usepackage{graphicx}
 \usepackage{lmodern}
 \usepackage{footmisc}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{hyperref}
 \usepackage{verbatim}
+\usepackage{hyperref}
 \usepackage{tikz}
 \usetikzlibrary{positioning,calc}
 \usepackage{xspace}
@@ -16,12 +21,12 @@
 \usepackage{amssymb}
 \usepackage{mathtools}
 \usepackage{pifont}
+\usepackage[capitalise,noabbrev]{cleveref}
 \usepackage{etoolbox}
 \usepackage{tablefootnote}
 \usepackage[normalem]{ulem}
 \usepackage{booktabs}
 \usepackage{array}
-\usepackage[capitalise,noabbrev]{cleveref}
 \usepackage{cite}
 \usepackage{multibib}
 \usepackage{url}
@@ -39,6 +44,7 @@
 \newtoggle{notes}
 \toggletrue{notes} % set to false to remove colored notes from the paper
 \SetSymbolFont{stmry}{bold}{U}{stmry}{m}{n}
+
 %--------------------------------------------------------
 % Editorial
 %--------------------------------------------------------
@@ -46,10 +52,6 @@
 \newcommand{\redunderline}[1]{\textcolor{red}{\underline{\textcolor{black}{#1}}}} 
 \newcommand{\TBW}{\textcolor{blue}{\textbf{To Be Written...}}}
 \newcommand{\Note}[1]{\textcolor{magenta}{ $\langle \! \langle$ #1 $\rangle \! \rangle$}}
-\newcommand{\rahul}[1]{\textcolor{orange}{{\sf Rahul: {#1}}}}
-\newcommand{\carmit}[1]{\textcolor{red}{{\sf Carmit: {#1}}}}
-\newcommand{\masayuki}[1]{\textcolor{green}{{\sf Masayuki: {#1}}}}
-\newcommand{\miyako}[1]{\textcolor{pink}{{\sf Miyako: {#1}}}}
 \newcommand{\quotes}[1]{``#1''}
 
 %--------------------------------------------------------
